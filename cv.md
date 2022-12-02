@@ -14,8 +14,9 @@
 ## Skills
 * HTML
 * CSS, SASS
-
+* Git, GitHub
 * JavaScript Basics
+
 
 
 ----
