@@ -40,4 +40,8 @@ return str.slice(1, str.length - 1);
 ## Projects
 * [Rs-school 2022Q3](https://rolling-scopes-school.github.io/volhamakas-JSFE2022Q3/online-zoo/);
 
-
+----
+## Languages
+* English (B1)
+* Russian (native)
+* Belorussian
