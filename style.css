@@ -45,8 +45,8 @@ html, body {
     border: 5px solid #feeeda;
     margin-right: 30px;
 }
-.mainImage {
-    padding-left: 155px;
+.main-image {
+    padding-left: 20px;
 }
 
 .link {
@@ -95,7 +95,7 @@ html, body {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    margin-left: 200px;
+    margin-left: 122px;
 }
 .main-name {
     font-size: 40px;
@@ -142,7 +142,8 @@ html, body {
     background-image: url(./assets/discord.svg);
 }
 
-.list {
+.list,
+.nav {
     list-style-type: none;
 }
 
