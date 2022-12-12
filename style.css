@@ -4,14 +4,20 @@ html {
 }
 
 body {
-    max-width: 1600px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color:#fff5ea;
 }
-html, body {
+.page-body::-webkit-scrollbar {
+    width: 0;
+  }
+/* html, body {
     height: 100%;
+} */
+.header {
+    width: 100vw;
 }
 .container {
     max-width: 1440px;
@@ -26,7 +32,7 @@ html, body {
 .section {
     width: 80%;
     margin-bottom: 60px;
-    margin-left: auto;
+    margin: auto;
 }
 
 .nav {
@@ -36,6 +42,7 @@ html, body {
     background-color: #928b87;
     justify-content: flex-end;
     align-items: center;
+    margin: 0;
 }
 .nav-item {
     flex: 1;
@@ -44,11 +51,11 @@ html, body {
 .profile-image {
     border-radius: 25px;
     border: 5px solid #feeeda;
-    margin-right: 30px;
+    margin: auto;
 }
-/* .main-image {
-    padding-left: 0 auto;
-} */
+.main-image {
+    margin: 30px 95px;
+}
 
 .link {
     display: flex;
@@ -58,19 +65,23 @@ html, body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
     transition: color .4s;
 }
 .links {
     text-decoration: none;
     color:#000;
+    font-size: 18px;
+
 }
-.link:hover {
+.links:hover,
+.link:hover,
+ .github-link:hover {
     color: #442b2b;
+    transition: 1.5s;
 }
 .oval {
 	width: 180px;
-	height: 35px;
+	height: 30px;
 	background: rgb(252, 177, 92);
 	-moz-border-radius: 100px / 50px;
 	-webkit-border-radius: 100px / 50px;
@@ -96,10 +107,10 @@ html, body {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    margin-left: 122px;
+    margin: auto;
 }
 .main-name {
-    margin-right: 132px;
+    margin-right: auto;
     font-size: 40px;
     text-transform: capitalize;
     letter-spacing: 2px;
@@ -111,6 +122,7 @@ html, body {
     margin-left: 0;
     margin-right: 40px;
     list-style-type: none;
+    padding-left: 0;
 }
 
 
@@ -144,12 +156,17 @@ html, body {
     background-image: url(./assets/discord.svg);
 }
 .list {
-    font-size: 22px;
+    font-size: 20px;
+    padding-left: 0;
+    padding-bottom: 5px;
 }
 
 .list,
 .nav {
     list-style-type: none;
+}
+.list-dot {
+    padding-bottom: 5px;
 }
 
 .list-dot::before {
@@ -168,7 +185,7 @@ html, body {
 
 .paragraph {
     margin-bottom: 2px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .footer-container {
@@ -199,11 +216,12 @@ html, body {
     height: 30px;
 }
 .profile-name {
-    margin: 15px 130px 15px 0;
+    margin: auto;
     text-align: center;
 }
 .footer {
     background-color: #836551;
+    max-width: 100%;
 }
 
 @media (max-width: 768px) {

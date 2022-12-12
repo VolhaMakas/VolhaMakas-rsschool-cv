@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
     <title>Volha Makas CV</title>
 </head>
     <body class="page-body">
-        <header>
+        <header class="header">
             <nav>
                 <ul class="nav">
                     <li class="nav-item"><a href="#about" class="link">About</a></li>
@@ -20,12 +21,12 @@
         </header>
         <main class="main-container">
             <aside class="left-side">
-                <section class="section" id="profile">
+                <section class="section">
                     <h2 class="main-name">Volha Makas</h2>
                     <h3 class="profile-name"> Junior Frontend Developer</h3>
-                    <figure class="main-image">
+                    <div class="main-image">
                         <img src="./IMG_8903.JPG" class="profile-image" alt="Photo of Volha Makas" width="300" height="400">
-                    </figure>
+                    </div>
                 </section>
                 <section class="section">
                     <h3 class="section-title-left oval">Contacts</h3>
@@ -38,12 +39,12 @@
                 </section>
             </aside>
             <div class="container">
-                <section class="section" id="about">
+                <section class="section">
                     <h3 class="section-title oval">About</h3>
                     <p class="paragraph">I am a student at Rolling Scopes School. I am studying web-technology, particularly frontend. I have almost 10 years experience in dentistry.</p>
                     <p class="paragraph"> But life changed, me and my family have moved to another country. So I decided to change my profession. I have good social qualities, calmness and resistance to hard work.</p>
                 </section>
-                <section class="section" id="skills">
+                <section class="section">
                     <h3 class="section-title oval">Skills</h3>
                     <ul class="list">
                         <li class="list-dot">HTML</li>
@@ -52,7 +53,7 @@
                         <li class="list-dot">JavaScript Basics</li>
                     </ul>
                 </section>
-                <section class="section" id="education">
+                <section class="section">
                     <h3 class="section-title oval">Education</h3>
                     <ul class="list">
                         <li class="list-dot"> Rss-school JS/FE Preschool 2022Q2,
@@ -63,7 +64,18 @@
                         <li class="list-dot">Copywriting courses</li>
                     </ul>
                 </section>
-                <section class="section" id="languages">
+                <section class="section">
+                    <h3 class="section-title oval">Projects</h3>
+                    <a href="https://rolling-scopes-school.github.io/volhamakas-JSFE2022Q3/online-zoo/" class="links">Online Zoo</a>
+                </section>
+                <section class="section">
+                    <h3 class="section-title oval">Code example</h3>
+                    <p class="paragraph">function removeChar(str){<br>
+
+                        return str.slice(1, str.length - 1);<br>
+                        };</p>
+                </section>
+                <section class="section">
                     <h3 class="section-title oval">Languages</h3>
                     <ul class="list">
                         <li class="list-dot">English (B1)</li>
@@ -82,3 +94,7 @@
         </footer>
     </body>
 </html>
+
+<!-- 1 Разобраться со структурой, выровнять все красиво
+2 прогнать через валидатор
+3 просмотреть css -->
