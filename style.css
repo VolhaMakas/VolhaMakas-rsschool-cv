@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 
 body {
@@ -10,17 +9,8 @@ body {
     justify-content: space-between;
     background-color:#fff5ea;
 }
-.page-body::-webkit-scrollbar {
-    width: 0;
-  }
-/* html, body {
-    height: 100%;
-} */
-.header {
-    width: 100vw;
-}
-.container {
-    max-width: 1440px;
+
+.right-side {
     width: 100%;
 }
 .main-container {
@@ -31,7 +21,6 @@ body {
 
 .section {
     width: 80%;
-    margin-bottom: 60px;
     margin: auto;
 }
 
@@ -54,10 +43,10 @@ body {
     margin: auto;
 }
 .main-image {
-    margin: 30px 95px;
+    margin: 30px 125px;
 }
 
-.link {
+.nav_link {
     display: flex;
     color: #f5f5dc;
     text-decoration: none;
@@ -67,14 +56,14 @@ body {
     align-items: center;
     transition: color .4s;
 }
-.links {
+.contact_link {
     text-decoration: none;
     color:#000;
     font-size: 18px;
 
 }
-.links:hover,
-.link:hover,
+.contact_link:hover,
+.nav_link:hover,
  .github-link:hover {
     color: #442b2b;
     transition: 1.5s;
@@ -118,7 +107,7 @@ body {
     font-weight:700px;
 }
 
-.contact-list {
+.contact {
     margin-left: 0;
     margin-right: 40px;
     list-style-type: none;
@@ -126,13 +115,13 @@ body {
 }
 
 
-.contact-item {
+.contact_item {
     padding: 10px 0;
     display: flex;
     align-items: center;
 }
 
-.contact-item::before {
+.contact_item::before {
     content:'';
     display: inline-block;
     width: 20px;
@@ -227,5 +216,8 @@ body {
 @media (max-width: 768px) {
     .section {
       width: 100%;
+    }
+    .main-image {
+        margin: 0 auto;
     }
 }
