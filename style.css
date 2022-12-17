@@ -9,14 +9,23 @@ body {
     justify-content: space-between;
     background-color:#fff5ea;
 }
-
+.header,
+.footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .right-side {
     width: 100%;
 }
 .main-container {
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
+    width: 100%;
+    max-width: 1440px;
+    margin: 40px auto;
+
 }
 
 .section {
@@ -43,7 +52,7 @@ body {
     margin: auto;
 }
 .main-image {
-    margin: 30px 90px;
+    margin: 30px 25px;
 }
 
 .nav_link {
@@ -210,14 +219,35 @@ body {
 }
 .footer {
     background-color: #836551;
-    max-width: 100%;
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .section {
       width: 100%;
+      margin: 0 auto;
     }
     .main-image {
         margin: 0 auto;
+    }
+    .main-container {
+        margin: 0 auto;
+
+    }
+    .main-name {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+    .profile-name {
+        font-size: 26px;
+        padding: 0 10px;
+
+    }
+    /* .left-side {
+        width: 100%;
+        margin: 50px auto;
+    } */
+    .right-side {
+        margin: 0 10px;
     }
 }
